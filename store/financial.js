@@ -20,18 +20,17 @@ export const state = () => ({
 	async fetchQuoteData({ commit, state }) {
 		if(state.quoteData.length <= 0){
 			try {
-				let url = `${process.env.baseUrl}/quotations?key=75b1dcb8`
-
+				let url = `${process.env.baseUrl}/quotations?key=f69639ac`
 				
-					const result = await new Promise(resolve => {
-						this.$axios.$get(url).then(quoteData =>{
-							commit('setQuoteData', quoteData)
-							resolve(true)
-						}).catch(function(err){
-							resolve(false)
-						})
+				const result = await new Promise(resolve => {
+					this.$axios.$get(url).then(quoteData =>{
+						commit('setQuoteData', quoteData)
+						resolve(true)
+					}).catch(function(err){
+						resolve(false)
 					})
-				
+				})
+			
 
 				if(result){
 					return 'Usuário registrado!'
