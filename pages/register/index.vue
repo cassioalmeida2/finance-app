@@ -14,27 +14,12 @@
 				<v-col cols="12">
                     <v-form ref="form" validate-on="submit lazy" @submit.prevent="submit">
                         <v-text-field v-model="user.name" :rules="nameRules" outlined label="Nome" type="name" required>
-							<template #prepend-inner>
-								<div class="d-flex align-center justify-center">
-									<base-icon icon="people" class="pa-2" />
-								</div>
-							</template>
                         </v-text-field>
 
                         <v-text-field  v-model="user.email" :rules="emailRules" outlined label="Email" type="email" required>
-							<template #prepend-inner>
-								<div class="d-flex align-center justify-center">
-									<base-icon icon="mail" class="pa-2" />
-								</div>
-							</template>
                         </v-text-field>
 
                         <v-text-field @input="phoneMask" v-model="user.phone" :rules="phoneRules" outlined label="Telefone" type="phone" maxlength="15" placeholder="DDD + Telefone" required>
-							<template #prepend-inner>
-								<div class="d-flex align-center justify-center">
-									<base-icon icon="phone" class="pa-2" />
-								</div>
-							</template>
 						</v-text-field>
 
 						<v-text-field 
@@ -46,11 +31,6 @@
 							@click:append="changeVisiblePassword"
 							required
 						>
-							<template #prepend-inner>
-								<div class="d-flex align-center justify-center">
-									<base-icon icon="lock" class="pa-2" />
-								</div>
-							</template>
 						</v-text-field>
 
 						<v-text-field 
@@ -63,11 +43,6 @@
 							@click:append="changeVisibleConfirmPassword"
 							required
 						>
-							<template #prepend-inner>
-								<div class="d-flex align-center justify-center">
-									<base-icon icon="lock" class="pa-2" />
-								</div>
-							</template>
 						</v-text-field>
 
 

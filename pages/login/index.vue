@@ -14,11 +14,6 @@
                     <v-col cols="12">
                         <v-form ref="form" validate-on="submit lazy" @submit.prevent="submit">
                             <v-text-field :rules="emailRules" outlined label="Email" v-model="user.email" type="email" required >
-                                <template #prepend-inner>
-                                    <div class="d-flex align-center justify-center">
-                                        <base-icon icon="people" class="pa-2" />
-                                    </div>
-                                </template>
                             </v-text-field>
 
                             <v-text-field 
@@ -30,11 +25,6 @@
 								@click:append="changeVisiblePassword"
 								required
 							>
-                                <template #prepend-inner>
-                                    <div class="d-flex align-center justify-center">
-                                        <base-icon icon="lock" class="pa-2" />
-                                    </div>
-                                </template>
                             </v-text-field>
 
                             <base-button block color="primary" class="login__button text-body-1 font-weight-bold" @click="submit">Entrar</base-button>
