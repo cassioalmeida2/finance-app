@@ -82,7 +82,6 @@ export default {
 					success: '#37bc9b',
 					white: '#ffffff',
 					black: '#000000',
-					green: '#008000'
 				},
 			}
 		}

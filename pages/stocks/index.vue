@@ -152,19 +152,19 @@
 <style lang='scss'>
 	.dashboard {
 		&__variation {
-			color: $green;
+			color: green;
 
 			&--negative {
-				color: $red;
+				color: red;
 			}
 		}
 
 		&__trending-up {
-			fill: $green;
+			fill: green;
 		}
 
 		&__trending-down {
-			fill: $red;
+			fill: red;
 		}
 
 		.v-input__append-outer {
