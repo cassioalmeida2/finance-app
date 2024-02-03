@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('~/assets/fonts/Inter-Regular.ttf') format('truetype');
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    fill: $grey300;
+
+    &--sm {
+        height: 20px;
+        width: 20px;
+    }
+
+    &--md {
+        height: 30px;
+        width: 30px;
+    }
+
+    &--black {
+        fill: $black;
+    }
+
+    &--primary {
+        fill: $primary;
+    }
+}
+
+
