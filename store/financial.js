@@ -20,8 +20,8 @@ export const state = () => ({
 	async fetchQuoteData({ commit, state }) {
 		if(state.quoteData.length <= 0){
 			try {
-				let url = `${process.env.baseUrl}/quotations?key=f69639ac`
-				
+				let url = `${process.env.baseUrl}/quotations?format=json-cors&key=f69639ac`
+
 				const result = await new Promise(resolve => {
 					this.$axios.$get(url).then(quoteData =>{
 						commit('setQuoteData', quoteData)
@@ -30,14 +30,12 @@ export const state = () => ({
 						resolve(false)
 					})
 				})
-			
 
 				if(result){
 					return 'Usuário registrado!'
 				}else {
 					throw new Error('Erro ao registrar usuário!');
 				}
-				
 			} catch (error) {
 				return Promise.reject(error.message);
 			}
