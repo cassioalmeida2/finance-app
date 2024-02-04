@@ -18,7 +18,7 @@
 		<divisor class="mb-4" />
 		<v-row>
 			<v-col v-for="(quoteItem, index) in stocksListBySearch" :key="index" cols="12" sm="12" md="4" lg="3" xl="3" >
-				<base-card class="card-block d-flex flex-column greyLight pa-3"  >
+				<base-card class="card-block d-flex flex-column pa-3">
 					<template>
 						<div class="d-flex flex-column justify-space-between">
 							<div class="d-flex justify-space-between">
@@ -152,19 +152,19 @@
 <style lang='scss'>
 	.dashboard {
 		&__variation {
-			color: green;
+			color: $greenDefault;
 
 			&--negative {
-				color: red;
+				color: $redDefault;
 			}
 		}
 
 		&__trending-up {
-			fill: green;
+			fill: $greenDefault;
 		}
 
 		&__trending-down {
-			fill: red;
+			fill: $redDefault;
 		}
 
 		.v-input__append-outer {

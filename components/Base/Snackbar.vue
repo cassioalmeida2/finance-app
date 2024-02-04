@@ -39,7 +39,7 @@ export default {
 				},
 				success: {
 					timeout: 3000,
-					color: 'green',
+					color: 'success',
 					icon: 'check'
 				},
 				warning: {
