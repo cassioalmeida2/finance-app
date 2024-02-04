@@ -1,69 +1,42 @@
-# finance-app
+# Finance APP
 
 ## Build Setup
 
 ```bash
-# install dependencies
+Foi utilizado na construção e execução do projeto a versão v16.20.2 do Node Rodando na maquina.
+Importante verificar se essa é a versão que você possui na sua máquina para que o projeto possa rodar adequadamente.
+
+# Instalar as dependências com Yarn
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# Servidor local da aplicação localhost:3000
 $ yarn dev
 
-# build for production and launch server
+# Build para produção 
 $ yarn build
 $ yarn start
 
-# generate static project
-$ yarn generate
-```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+## `Tecnologias e padrões`
+Para esse projeto utilizamos: NuxtJs 2/ Vue, Vuetify, HTML, SCSS, Padrão BEM CSS, Javascript, Componetização Base e Avançada, Sprites com SVG para atender icones da aplicação.
 
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
 
 ### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+No diretório assets ficam imagens SVG, fontes e arquivos SCSS que são usados pela aplicação como um todo.
 
 ### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+Na pasta components ficam os componentes Vue. Dentro dela possui a pasta Base, onde são colocados os componentes que atendem a aplicação em diversos cenários
+e por estarem em um único local facilitam a manutenção e atualização de toda aplicação. Fora da pasta Base a ideia é criar os componentes mais específicos que
+muitas vezes utilizam o componente Base ou até outro componente mais específico dentro dele.
 
 ### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+A pasta layout contém as partes que fazem parte de uma definição de página que geralmente pouco se altera, onde contém layouts específicos para alguns casos
+como Tela de Login, Principal.
 
 
 ### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+Nesta pasta ficam as páginas da aplicação onde todos os componentes e estruturação acontece para atender a aplicação.
 
 ### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+A pasta store possui todos os arquivos da Vuex, onde acontece a criação das funções Actions para buscar, salvar dados e controlar
+todo estado da aplicação.
